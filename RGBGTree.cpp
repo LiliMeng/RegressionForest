@@ -1,4 +1,7 @@
-Author: Jimmy & Lili
+
+//  Authors jimmy and Lili 
+//  Copyright © 2016 jimmy. All rights reserved.
+//
 
 #include "RGBG_tree.hpp"
 #include <iostream>
@@ -112,11 +115,16 @@ static double bestSplitRandomParameter(const vector<RGBGLearningSample> & sample
         // if (cur_left_index.size() * 2 < min_node_size || cur_right_index.size() * 2 < min_node_size) {
         //    continue;
         // }
+
+        /*
         cur_loss = RGBGUtil::spatial_variance(samples, cur_left_index);
+
         if(cur_loss > min_loss) {
             continue;
         }
         cur_loss += RGBGUtil::spatial_variance(samples, cur_right_index);
+        */
+
         if(cur_loss < min_loss) {
             is_split = true;
             min_loss = cur_loss;
